@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Basic</title>
+</head>
+
+<body>
+
+    <!-- js output -->
+    <p id="name"></p>
+    <button type="button" onclick="document.write('hi, javascript')">Try it</button>
+    <br><br>
+    <button onclick="window.print()">Print this page</button>
+
+    <!-- function -->
+    <h3>Value from function: </h3>
+    <p id="add"></p>
+
+    <script>
+        // js output
+        document.getElementById('name').innerHTML = 'Rad Kurdi';
+        console.log('hello world');
+        // alert('js alert');
+
+        // veriables
+        var x, y;
+        x = 5;
+        y = 6;
+        console.log(x + y);
+
+        let firstName = 'Rad ';
+        let lastName = 'Kurdi';
+        let name = firstName + lastName;
+        console.log(name);
+
+        // function
+        function add() {
+            return x + y;
+        }
+        document.getElementById('add').innerHTML = add();
+
+        // object
+        person = {
+            firstName: 'Balad ',
+            lastName: 'Kurdi',
+            fullName: function() {
+                return this.firstName + this.lastName;
+            }
+        }
+
+        console.log(person.fullName());
+    </script>
+</body>
+
+</html>
