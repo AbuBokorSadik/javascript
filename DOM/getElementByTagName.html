@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Element By Tag Name</title>
+</head>
+
+<body>
+    <div id="main">
+        <p>1st p tag</p>
+        <p>2nd p tag</p>
+    </div>
+
+    <p>3rd p tag</p>
+    <p>4th p tag</p>
+
+    <script>
+        const p_tags = document.getElementsByTagName('p');
+        console.log('Get all p tag: ');
+        for(let p_tag of p_tags){
+            console.log(p_tag.innerHTML);
+        }
+
+        console.log('Get p tag in a id: ');
+        const get_id = document.getElementById('main');
+        const id_p_tags = get_id.getElementsByTagName('p');
+        for(let id_p_tag of id_p_tags){
+            console.log(id_p_tag.innerHTML);
+        }
+    </script>
+</body>
+
+</html>

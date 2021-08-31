@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Value Change</title>
+</head>
+<body>
+    <p>Wait 3s to change</p>
+    <img id="image" src="masrum.jpg" alt="" style="height: 200px; width: 200px;">
+
+    <script>
+        setTimeout(getImage,3000);
+        function getImage()
+        {
+            document.getElementById('image').src = 'oil.jpeg';
+        }
+    </script>
+</body>
+</html>
