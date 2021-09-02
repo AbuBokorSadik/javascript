@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <p>This example uses the addEventListener() method to attach a "blur" event to an input element.</p>
+
+    <p>Write something in the input field, and then click outside the field to lose focus (blur).</p>
+
+    <input type="text" id="name">
+
+    <script>
+        const blur = document.getElementById("name");
+        blur.addEventListener("blur", blurEvent);
+        function blurEvent() {
+            var x = document.getElementById('name');
+            x.value = x.value.toUpperCase();
+        }
+    </script>
+
+</body>
+
+</html>

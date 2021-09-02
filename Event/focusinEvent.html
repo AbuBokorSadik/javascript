@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <p>When you enter the input field (child of FORM), a function is triggered which sets the background color to
+        yellow. When you leave the input field, a function is triggered which removes the background color.</p>
+
+    <form id="myForm">
+        <input type="text" id="input">
+        <input type="text" id="input2">
+    </form>
+
+    <script>
+        var x = document.getElementById("myForm");
+        x.addEventListener("focusin", focusinEvent);
+        x.addEventListener("focusout", focusoutEvent);
+
+        function focusinEvent() {
+            document.getElementById("input").style.backgroundColor = "yellow";
+            document.getElementById("input2").style.backgroundColor = "";
+        }
+
+        function focusoutEvent() {
+            document.getElementById("input").style.backgroundColor = "";
+            document.getElementById("input2").style.backgroundColor = "red";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+  <p>This example uses the addEventListener() method to attach an "afterprint" event to the window object.</p>
+
+  <h1>Try to print this document</h1>
+  <p><b>Tip:</b> Keyboard shortcuts, such as Ctrl+P sets the page to print.</p>
+  <p><b>Note:</b> The afterprint event is not supported in Safari and Opera.</p>
+  <p><b>Note:</b> In IE, the afterprint event occurs before the print dialogue box, instead of after.</p>
+
+  <script>
+    window.addEventListener("afterprint", afterPrintEvent);
+
+    function afterPrintEvent() {
+      alert("This document is now being printed");
+    }
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <p>This example uses the addEventListener() method to attach a "beforeprint" event to the window object.</p>
+
+    <h1>Try to print this document</h1>
+    <p><b>Tip:</b> Keyboard shortcuts, such as Ctrl+P sets the page to print.</p>
+    <p><b>Note:</b> The beforeprint event is not supported in Safari and Opera. </p>
+
+    <script>
+        window.addEventListener("beforeprint", beforePrintEvent);
+
+        function beforePrintEvent() {
+            alert("You are about to print this document!");
+        }
+    </script>
+
+</body>
+
+</html>
